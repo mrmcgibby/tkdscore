@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>999</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="round">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>48</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>R1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="clock">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>120</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>0:00</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="2">
+       <widget class="QLabel" name="chung_score">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>3</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>120</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="chung_penalty">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="hong_penalty">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="hong_score">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>3</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>120</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="hong_flag">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="hong_name">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Hong</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="chung_name">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Chung</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="chung_flag">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="playButton">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(138, 226, 52);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="tkdscore.qrc">
+          <normaloff>:/play-fill.png</normaloff>:/play-fill.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>72</width>
+          <height>72</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pauseButton">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="tkdscore.qrc">
+          <normaloff>:/pause-fill.png</normaloff>:/pause-fill.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>72</width>
+          <height>72</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>999</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="tkdscore.qrc"/>
+ </resources>
+ <connections/>
+</ui>
