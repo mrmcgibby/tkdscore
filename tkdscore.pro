@@ -8,12 +8,23 @@ CONFIG += c++11
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+LIBS += -lSDL2
+
 SOURCES += \
+    judge.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    scorekeeper.cpp \
+    settings.cpp \
+    testjudge.cpp
 
 HEADERS += \
-    mainwindow.h
+    common.h \
+    judge.h \
+    mainwindow.h \
+    scorekeeper.h \
+    settings.h \
+    testjudge.h
 
 FORMS += \
     mainwindow.ui
